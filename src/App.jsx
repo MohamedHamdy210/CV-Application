@@ -142,14 +142,7 @@ const App = () => {
 
         <h3>Education:</h3>
         {educationList.map((edu, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ccc",
-              padding: "0.5rem",
-              marginBottom: "0.5rem",
-            }}
-          >
+          <div key={index}>
             <p>School: {edu.school}</p>
             <p>Degree: {edu.degree}</p>
             <p>Year: {edu.year}</p>
@@ -157,14 +150,7 @@ const App = () => {
         ))}
         <h3>Practical Experience:</h3>
         {experienceList.map((exp, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ccc",
-              padding: "0.5rem",
-              marginBottom: "0.5rem",
-            }}
-          >
+          <div key={index}>
             <p>Company: {exp.company}</p>
             <p>Role: {exp.role}</p>
             <p>Start Date: {exp.startDate}</p>
