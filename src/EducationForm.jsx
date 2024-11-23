@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const EducationForm = ({ onAddEducation, initialData, onSaveEdit }) => {
   const [education, setEducation] = useState(
-    initialData || { school: "", degree: "", year: "" }
+    initialData || { school: "", degree: "", year: "", desc: "" }
   );
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const EducationForm = ({ onAddEducation, initialData, onSaveEdit }) => {
     } else {
       onAddEducation(education); // Add a new entry
     }
-    setEducation({ school: "", degree: "", year: "" }); // Reset form
+    setEducation({ school: "", degree: "", year: "", desc: "" }); // Reset form
   };
 
   return (
@@ -52,6 +52,15 @@ const EducationForm = ({ onAddEducation, initialData, onSaveEdit }) => {
           type="text"
           name="year"
           value={education.year}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label>Description:</label>
+        <input
+          type="text"
+          name="desc"
+          value={education.desc}
           onChange={handleChange}
         />
       </div>

@@ -94,6 +94,7 @@ const App = () => {
             <p>School: {edu.school}</p>
             <p>Degree: {edu.degree}</p>
             <p>Year: {edu.year}</p>
+            <p>Description: {edu.desc}</p>
             <button onClick={() => handleEditEducation(index)}>Edit</button>
             <button onClick={() => handleDeleteEducation(index)}>Delete</button>
           </div>

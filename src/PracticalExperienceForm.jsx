@@ -27,7 +27,7 @@ const PracticalExperienceForm = ({
     setExperience({ compny: "", role: "", startDate: "", endDate: "" });
   };
   return (
-    <form onSubmit={handleSubmit} classNae="form">
+    <form onSubmit={handleSubmit} className="form">
       <div>
         <label>Company:</label>
         <input
